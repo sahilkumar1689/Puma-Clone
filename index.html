@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <style>
+        .scroller{
+            overflow: scroll;
+            scrollbar-width: none;
+        }
+    </style>
+    <title>Puma Clone</title>
+</head>
+<body>
+    <header class="relative">
+        <div class="w-screen h-[44px] bg-[#8A7350] flex justify-center items-center">
+            <span class="text-white font-semibold nav1:text-[13px]">EXTRA 5% DISCOUNT FOR ALL ONLINE PAYMENTS</span>
+        </div>
+
+        <div class="w-screen h-[80px] bg-black">
+            <div class="w-[95%] h-full mx-auto flex justify-center items-center nav2-2:justify-between">
+                <img src="Images/pumalogo2.png" alt="pumalogo" class="w-[36px] h-[36px] ml-[10px]">
+
+                <div class="w-[74%] h-full nav2-2:hidden">
+                    <ul class="w-[70%] h-full flex justify-around items-center nav2:w-[90%]">
+                        <li class="list-none"><a href="#" class="text-white text-[18px] font-semibold hover:border-b-2 border-b-solid border-b-[#514534]">New</a></li>
+                        <li class="list-none"><a href="#" class="text-white text-[18px] font-semibold hover:border-b-2 border-b-solid border-b-[#514534]">Women</a></li>
+                        <li class="list-none"><a href="#" class="text-white text-[18px] font-semibold hover:border-b-2 border-b-solid border-b-[#514534]">Men</a></li>
+                        <li class="list-none"><a href="#" class="text-white text-[18px] font-semibold hover:border-b-2 border-b-solid border-b-[#514534]">Kids</a></li>
+                        <li class="list-none"><a href="#" class="text-white text-[18px] font-semibold hover:border-b-2 border-b-solid border-b-[#514534]">Motorsport</a></li>
+                        <li class="list-none"><a href="#" class="text-white text-[18px] font-semibold hover:border-b-2 border-b-solid border-b-[#514534]">Collaborations</a></li>
+                        <li class="list-none"><a href="#" class="text-white text-[18px] font-semibold hover:border-b-2 border-b-solid border-b-[#514534]">Sports</a></li>
+                        <li class="list-none"><a href="#" class="text-white text-[18px] font-semibold hover:border-b-2 border-b-solid border-b-[#514534]">Outlet</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-[375px] h-full flex justify-evenly items-center nav2-2:w-[270px] ">
+                    <button class="w-[130px] h-[40px] border-[1px] border-solid border-[#676D75] text-white text-[18px] font-semibold hover:border-white nav2:hidden"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff; margin-right: 10px;"></i>Search</button>
+
+                    <div class="size-[42px] hover:bg-[#404040] flex justify-center items-center rounded-[50%] hidden nav2:flex">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff; font-size: 20px;"></i>
+                    </div>
+                    <div class="size-[42px] hover:bg-[#404040] flex justify-center items-center rounded-[50%]">
+                        <i class="fa-regular fa-heart" style="color: #ffffff; font-size: 20px;"></i>
+                    </div>
+                    <div class="size-[42px] hover:bg-[#404040] flex justify-center items-center rounded-[50%]">
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff; font-size: 20px;"></i>
+                    </div>
+
+                    <div class="size-[42px] hover:bg-[#404040] flex justify-center items-center rounded-[50%] hidden nav2-2:flex">
+                        <i class="fa-solid fa-bars hamburgerMenu" style="color: #ffffff; font-size: 20px;"></i>
+                    </div>
+                    
+                    <div class="size-[42px] hover:bg-[#404040] flex justify-center items-center rounded-[50%] nav2-2:hidden">
+                        <i class="fa-regular fa-user" style="color: #ffffff; font-size: 20px;"></i>
+                    </div>
+
+                </div>
+    
+            </div>
+           
+        </div>
+        
+        <div class="w-screen h-[80px] bg-[#AB1F29] flex flex-col justify-center items-center">
+            <h2 class="text-sm font-bold text-white">EXTRA 15% OFF ON ORDERS ABOVE ₹3999*</h2>
+            <h3 class="text-xs font-bold text-white mt-2">Auto-applied at checkout | *Exclusions apply</h3>
+            
+        </div>
+        
+        <div class="w-screen relative">
+            <div class="w-full relative">
+                <picture class="w-full">
+                    <source srcset="Images/Image6.jpg" media="(min-width:1024px)" class="w-full">
+                    <source srcset="Images/Image6(i).jpg" media="(min-width:540px)" class="w-full">
+                    <img src="Images/Image6(ii).jpg" alt="" class="w-full">
+                </picture>
+
+                <div class="w-[45vw] h-[22vw] flex flex-col justify-center items-center
+                absolute top-[16%] right-4 SmallScreenContent:hidden
+                ">
+                    <h1 class="text-[3vw] text-black font-bold">NEW & TRENDING</h1>
+                    <h2 class="text-[1.8vw] text-black">LEVEL UP YOUR STYLE GAME</h2>
+                    <div class="w-full mt-4 flex justify-center gap-8">
+                        <button class="w-[10vw] h-[3vw] text-[1.5vw] bg-black text-white mt-[16px] font-bold buttonContent: ">SHOP Men</button>
+                        <button class="w-[10vw] h-[3vw] text-[1.3vw] bg-black text-white mt-[16px] font-bold buttonContent:">SHOP Women</button>
+                        <button class="w-[10vw] h-[3vw] text-[1.5vw] bg-black text-white mt-[16px] font-bold buttonContent:">SHOP Kids</button>
+                    </div>
+                </div>
+
+                <div class="w-[310px] h-[170px] mx-auto flex flex-col justify-center items-center hidden
+                SmallScreenContent:flex">
+                    <h1 class="text-black font-bold text-[22px] ">NEW & TRENDING</h1>
+                    <h2 class="text-black text-[14px]">LEVEL UP YOUR STYLE GAME</h2>
+                    <div class="w-full flex justify-center gap-1">
+                        <button class="w-[100px] h-[30px] text-[12px] bg-black text-white mt-[20px] font-bold">SHOP MEN</button>
+                        <button class="w-[100px] h-[30px] text-[12px] bg-black text-white mt-[20px] font-bold">SHOP WOMEN</button>
+                        <button class="w-[100px] h-[30px] text-[12px] bg-black text-white mt-[20px] font-bold">SHOP KIDS</button>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="w-full h-[785px] border-2 border-solid border-white absolute top-32 bg-white shadow-2xl hidden hiddenNav">
+            <div class="w-1/2 h-full mx-auto">
+                <div class="w-full h-[47px] border-b-[1px] border-b-solid border-b-[#676d75] flex justify-between items-center">
+                    <span class="text-black ml-4 text-xl font-bold SmallScreenContent:text-sm">NEW</span>
+                    <i class="fa-solid fa-chevron-right mr-4" style="font-size: 20px;"></i>
+                </div>
+                <div class="w-full h-[47px] border-b-[1px] border-b-solid border-b-[#676d75] flex justify-between items-center">
+                    <span class="text-black ml-4 text-xl font-bold SmallScreenContent:text-sm">WOMEN</span>
+                    <i class="fa-solid fa-chevron-right mr-4" style="font-size: 20px;"></i>
+                </div>
+                <div class="w-full h-[47px] border-b-[1px] border-b-solid border-b-[#676d75] flex justify-between items-center">
+                    <span class="text-black ml-4 text-xl font-bold SmallScreenContent:text-sm">MENS</span>
+                    <i class="fa-solid fa-chevron-right mr-4" style="font-size: 20px;"></i>
+                </div>
+                <div class="w-full h-[47px] border-b-[1px] border-b-solid border-b-[#676d75] flex justify-between items-center">
+                    <span class="text-black ml-4 text-xl font-bold SmallScreenContent:text-sm">KIDS</span>
+                    <i class="fa-solid fa-chevron-right mr-4" style="font-size: 20px;"></i>
+                </div>
+                <div class="w-full h-[47px] border-b-[1px] border-b-solid border-b-[#676d75] flex justify-between items-center">
+                    <span class="text-black ml-4 text-xl font-bold SmallScreenContent:text-sm">FENTY x PUMA</span>
+                    <i class="fa-solid fa-chevron-right mr-4" style="font-size: 20px;"></i>
+                </div>
+                <div class="w-full h-[47px] border-b-[1px] border-b-solid border-b-[#676d75] flex justify-between items-center">
+                    <span class="text-black ml-4 text-xl font-bold SmallScreenContent:text-sm">MOTORSSPORT</span>
+                    <i class="fa-solid fa-chevron-right mr-4" style="font-size: 20px;"></i>
+                </div>
+                <div class="w-full h-[47px] border-b-[1px] border-b-solid border-b-[#676d75] flex justify-between items-center">
+                    <span class="text-black ml-4 text-xl font-bold SmallScreenContent:text-sm">COLLABORATIONS</span>
+                    <i class="fa-solid fa-chevron-right mr-4" style="font-size: 20px;"></i>
+                </div>
+                <div class="w-full h-[47px] border-b-[1px] border-b-solid border-b-[#676d75] flex justify-between items-center">
+                    <span class="text-black ml-4 text-xl font-bold SmallScreenContent:text-sm">SPORTS</span>
+                    <i class="fa-solid fa-chevron-right mr-4" style="font-size: 20px;"></i>
+                </div>
+                <div class="w-full h-[47px] flex justify-between items-center">
+                    <span class="text-black ml-4 text-xl font-bold SmallScreenContent:text-sm">OUTLET</span>
+                    <i class="fa-solid fa-chevron-right mr-4" style="font-size: 20px;"></i>
+                </div>
+
+                <ul class="w-full h-[188px] mt-4">
+                    <li class="text-black text-[16px] pl-4 h-[36px] pt-1 border-b-[1px] border-b-solid border-b-[#676D75] SmallScreenContent:text-[14px]">My Accounts</li>
+                    <li class="text-black text-[16px] pl-4 h-[36px] pt-1 border-b-[1px] border-b-solid border-b-[#676D75] SmallScreenContent:text-[14px]">Whishlist</li>
+                    <li class="text-black text-[16px] pl-4 h-[36px] pt-1 border-b-[1px] border-b-solid border-b-[#676D75] SmallScreenContent:text-[14px] h-[45px]">Check Order/Initiate Return</li>
+                    <li class="text-black text-[16px] pl-4 h-[36px] pt-1 border-b-[1px] border-b-solid border-b-[#676D75] SmallScreenContent:text-[14px]">Store Finder</li>
+                    <li class="text-black text-[16px] pl-4 h-[36px] pt-1 border-b-[1px] border-b-solid border-b-[#676D75] SmallScreenContent:text-[14px]">Language</li>
+                </ul>
+
+                <button class="w-full h-[40px] border-[1px] border-solid border-black  text-[16px] my-2 bg-black text-white text-lg font-bold rounded-4">LOGIN</button>
+                <button class="w-full h-[40px] border-[1px] border-solid border-black  text-[16px] my-2 text-lg font-bold rounded-4">REGISTER HERE</button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="w-screen">
+            
+            <div class="w-full my-8">
+                <h1 class="text-black text-3xl font-bold text-center nav3:text-xl">GEAR UP FOR THE CRICKET SEASON</h1>
+
+                <div class="w-[80%] mx-auto my-8 grid grid-cols-2 gap-8 buttonContent:grid-cols-1 SmallScreenContent:w-full">
+
+                    <div class="h-[650px]">
+                        <img src="Images/Image3(ii).jpg" class="h-[500px] object-cover object-top mx-auto">
+
+                        <div class="mt-3 w-full">
+                            <div class="text-center">
+                                <h2 class="text-xl font-bold">WEAR YOUR PRIDE</h2>
+                                <p class="text-xs">2024 PUMA x RCB MEN’S JERSEY</p>
+                            </div>
+
+                            <div class="relative mt-3 flex flex-col space-y-3 max-w-64 mx-auto">
+                                <a class="h-10 text-xl text-center pt-1 bg-black text-white whitespace-normal" href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="h-[650px]">
+                        <img src="Images/cricket.jpg" class="h-[500px] object-cover object-top mx-auto">
+
+                        <div class="mt-3 w-full">
+                            <div class="text-center">
+                                <h2 class="text-xl font-bold">LOYALITY IS ROYALITY</h2>
+                                <p class="text-xs">PUMA x RCB ATHLEISURE COLLECTION</p>
+                            </div>
+
+                            <div class="relative mt-3 flex flex-col space-y-3 max-w-64 mx-auto">
+                                <a class="h-10 text-xl text-center pt-1 bg-black text-white whitespace-normal" href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full my-8">
+                <h1 class="text-black text-4xl font-bold text-center nav3:text-2xl">CRUSH IT LIKE KAREENA</h1>
+                <h5 class="text-slate-300 mt-2 text-center text-xl">HER GO TO WORKOUT FIT</h5>
+
+                <div class="w-[80%] mx-auto my-8 grid grid-cols-2 gap-8 buttonContent:grid-cols-1 SmallScreenContent:w-full">
+
+                    <div class="h-[650px]">
+                        <img src="Images/kareena1.jpg" class="h-[500px] object-cover object-top mx-auto">
+
+                        <div class="mt-3 w-full">
+                            <div class="text-center">
+                                <h2 class="text-xl font-bold">OWN YOUR JOURNEY</h2>
+                                <p class="text-xs">PUMA x LEMLEM</p>
+                            </div>
+
+                            <div class="relative mt-3 flex flex-col space-y-3 max-w-64 mx-auto">
+                                <a class="h-10 text-xl text-center pt-1 bg-black text-white whitespace-normal" href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="h-[650px]">
+                        <img src="Images/kareena2.jpg" class="h-[500px] object-cover object-top mx-auto">
+
+                        <div class="mt-3 w-full">
+                            <div class="text-center">
+                                <h2 class="text-xl font-bold">FITNESS MEETS FASHION</h2>
+                                <p class="text-xs">WORKOUT ESSENTIALS</p>
+                            </div>
+
+                            <div class="relative mt-3 flex flex-col space-y-3 max-w-64 mx-auto">
+                                <a class="h-10 text-xl text-center pt-1 bg-black text-white whitespace-normal" href="#">SHOP CURRATED LOOKS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full my-8 relative">
+                <picture class="w-full">
+                    <source srcset="Images/Image1.jpg" media="(min-width:1024px)" class="w-full">
+                    <source srcset="Images/Image1(i).jpg" media="(min-width:540px)" class="w-full">
+                    <img src="Images/Image1(ii).webp" alt="" class="w-full">
+                </picture>
+
+                <div class="w-[40vw] h-[20vw] flex flex-col justify-center items-center
+                absolute top-[23%] left-0 SmallScreenContent:hidden
+                ">
+                    <h1 class="text-[3.3vw] text-black font-bold">THE PARTY CONTINUES</h1>
+                    <h2 class="text-[2vw] text-black">PUMA X PTC: LIFESTYLE EDITION</h2>
+                    <button class="w-[125px] h-[40px] text-[16px] bg-black text-white mt-[20px] font-bold buttonContent:w-[110px] h-[25px] text-[12px]">SHOP NOW</button>
+                </div>
+
+                <div class="w-[310px] h-[170px] mx-auto p-[16px] p-16 flex flex-col justify-center items-center hidden
+                SmallScreenContent:flex">
+                    <h1 class="text-black font-bold text-[24px] ">THE PARTY CONTINUES</h1>
+                    <h2 class="text-black text-[16px]">PUMA X PTC: LIFESTYLE EDITION</h2>
+                    <button class="w-[125px] h-[40px] text-[16px] bg-black text-white mt-[20px] font-bold">SHOP NOW</button>
+                </div>
+            </div>
+            
+            <div class="w-full my-8 relative">
+                <picture class="w-full">
+                    <source srcset="Images/Image2.jpg" media="(min-width:1024px)" class="w-full">
+                    <source srcset="Images/Image2(i).jpg" media="(min-width:540px)" class="w-full">
+                    <img src="Images/Image2(ii).jpg" alt="" class="w-full">
+                </picture>
+
+                <div class="w-[40vw] h-[20vw] flex flex-col justify-center items-center
+                absolute top-[23%] right-0 SmallScreenContent:hidden
+                ">
+                    <h1 class="text-[3vw] text-white font-bold">DELHI, SAVE THE FIGHT <br> <span class="ml-20">FOR THE GAME</span></h1>
+                    <h2 class="text-[1.8vw] text-white">PUMA x DELHI CAPITALS MEN'S JERSEY</h2>
+                    <button class="w-[125px] h-[40px] text-[16px] bg-white text-black mt-[20px] font-bold buttonContent:w-[110px] h-[25px] text-[12px]">SHOP NOW</button>
+                </div>
+
+                <div class="w-[310px] h-[170px] mx-auto flex flex-col justify-center items-center hidden
+                SmallScreenContent:flex">
+                    <h1 class="text-black font-bold text-[22px] ">DELHI, SAVE THE FIGHT <br> <span class="ml-8">FOR THE GAME</span></h1>
+                    <h2 class="text-black text-[14px]">PUMA x DELHI CAPITALS MEN'S JERSEY</h2>
+                    <button class="w-[125px] h-[40px] text-[16px] bg-black text-white mt-[20px] font-bold">SHOP NOW</button>
+                </div>
+                
+            </div>
+            
+            <div class="w-full my-8 relative">
+                <picture class="w-full">
+                    <source srcset="Images/Image3.jpg" media="(min-width:1024px)" class="w-full">
+                    <source srcset="Images/Image3(i).jpg" media="(min-width:540px)" class="w-full">
+                    <img src="Images/Image3(ii).jpg" alt="" class="w-full">
+                </picture>
+
+                <div class="w-[40vw] h-[20vw] flex flex-col justify-center items-center
+                absolute top-[23%] right-0 SmallScreenContent:hidden
+                ">
+                    <h1 class="text-[3vw] text-white font-bold">WEAR YOUR PRIDE</h1>
+                    <h2 class="text-[1.8vw] text-white">2024 PUMA X RCB MEN'S JERSEY</h2>
+                    <button class="w-[125px] h-[40px] text-[16px] bg-white text-black mt-[20px] font-bold buttonContent:w-[110px] h-[25px] text-[12px]">SHOP NOW</button>
+                </div>
+
+                <div class="w-[310px] h-[170px] mx-auto flex flex-col justify-center items-center hidden
+                SmallScreenContent:flex">
+                    <h1 class="text-black font-bold text-[22px] ">WEAR YOUR PRIDE</h1>
+                    <h2 class="text-black text-[14px]">2024 PUMA X RCB MEN'S JERSEY</h2>
+                    <button class="w-[120px] h-[36px] text-[14px] bg-black text-white mt-[20px] font-bold">SHOP NOW</button>
+                </div>
+
+            </div>
+            
+            <div class="w-full my-8 relative">
+                <picture class="w-full">
+                    <source srcset="Images/Image4.png" media="(min-width:1024px)" class="w-full">
+                    <source srcset="Images/Image4(i).png" media="(min-width:540px)" class="w-full">
+                    <img src="Images/Image4(ii).jpg" alt="" class="w-full">
+                </picture>
+
+                <div class="w-[30vw] h-[20vw] flex flex-col justify-center items-center
+                absolute top-[23%] right-0 SmallScreenContent:hidden
+                ">
+                    <h1 class="text-[3vw] text-black font-bold ml-24">MMQ</h1>
+                    <h2 class="text-[1.8vw] text-black">CLEAN COURT STYLE</h2>
+                    <button class="w-[125px] h-[40px] text-[16px] bg-black text-white mt-[16px] font-bold buttonContent:w-[110px] h-[25px] text-[12px] ml-20">SHOP NOW</button>
+                </div>
+
+                <div class="w-[310px] h-[170px] mx-auto flex flex-col justify-center items-center hidden
+                SmallScreenContent:flex">
+                    <h1 class="text-black font-bold text-[22px] ">MMQ</h1>
+                    <h2 class="text-black text-[14px]">CLEAN COURT STYLE</h2>
+                    <button class="w-[120px] h-[36px] text-[14px] bg-black text-white mt-[20px] font-bold">SHOP NOW</button>
+                </div>
+                
+            </div>
+
+            <div class="w-full flex flex-col justify-center items-center gap-8">
+                <h1 class="text-black text-3xl font-bold nav1:text-2xl">RUN. TRAIN. CONQUER</h1>
+                <div class="w-[95%] grid grid-cols-3 gap-4 SmallScreenContent:hidden">
+                    <div class="relative">
+                        <img src="Images/card1.jpg" alt="cardImage1">
+                        <p class="absolute bottom-4 text-white text-2xl font-semibold left-8  buttonContent:text-sm">SHOP NITRO COLLECTION</p>
+                    </div>
+                    <div class="relative">
+                        <img src="Images/card2.jpg" alt="cardImage2">
+                        <P class="absolute bottom-4 text-white text-2xl font-semibold left-8 buttonContent:text-sm">SHOP STUDIO COLLECTION</P>
+                    </div>
+                    <div class="relative">
+                        <img src="Images/card3.jpg" alt="cardImage3">
+                        <P class="absolute bottom-4 text-white text-2xl font-semibold left-8 buttonContent:text-sm">SHOP PUMA FIT COLLECTION</P>
+                    </div>
+                </div>
+
+                <div class="w-[95%] h-[300px] whitespace-nowrap overflow-scroll LargeScreenContent:hidden">
+                    <div class="relative w-[200px] h-full inline-block">
+                        <img src="Images/card1.jpg" alt="cardImage1" class="w-full h-full">
+                        <p class="absolute bottom-4 text-white text-2xl font-semibold left-4 buttonContent:text-sm">SHOP NITRO COLLECTION</p>
+                    </div>
+                    <div class="relative w-[200px] h-full inline-block">
+                        <img src="Images/card2.jpg" alt="cardImage2" class="w-full h-full">
+                        <P class="absolute bottom-4 text-white text-2xl font-semibold  left-2 buttonContent:text-sm">SHOP STUDIO COLLECTION</P>
+                    </div>
+                    <div class="relative w-[200px] h-full inline-block">
+                        <img src="Images/card3.jpg" alt="cardImage3" class="w-full h-full">
+                        <P class="absolute bottom-4 text-white text-2xl font-semibold  buttonContent:text-sm">SHOP PUMA FIT COLLECTION</P>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full my-8 relative">
+                <picture class="w-full">
+                    <source srcset="Images/Image5.jpg" media="(min-width:1024px)" class="w-full">
+                    <source srcset="Images/Image5(i).jpg" media="(min-width:540px)" class="w-full">
+                    <img src="Images/Image5(ii).jpg" alt="" class="w-full">
+                </picture>
+
+                <div class="w-[30vw] h-[20vw] flex flex-col justify-center items-center
+                absolute top-[23%] left-0 SmallScreenContent:hidden
+                ">
+                    <h1 class="text-[3vw] text-black font-bold">PUMA.BL</h1>
+                    <h2 class="text-[1.8vw] text-black">BEYOUND LABELS</h2>
+                    <button class="w-[125px] h-[40px] text-[16px] bg-black text-white mt-[16px] font-bold buttonContent:w-[110px] h-[25px] text-[12px]">SHOP NOW</button>
+                </div>
+
+                <div class="w-[310px] h-[170px] mx-auto flex flex-col justify-center items-center hidden
+                SmallScreenContent:flex">
+                    <h1 class="text-black font-bold text-[22px] ">PUMA.BL</h1>
+                    <h2 class="text-black text-[14px]">BEYOUND LABELS</h2>
+                    <button class="w-[120px] h-[36px] text-[14px] bg-black text-white mt-[20px] font-bold">SHOP NOW</button>
+                </div>
+                
+            </div>
+            
+            <div class="w-full">
+                <span class="text-black text-2xl font-semibold ml-10">FRESH DRIP</span>
+
+                <div class="w-[95%] h-[340px] mx-auto mt-4 whitespace-nowrap overflow-scroll scroller">
+
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/craousel1.jpeg" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10">₹6,999</span>
+                    </div>
+
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/croual2.jpg" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10 text-red-600">₹5,199</span>
+                        <span class="absolute font-bold right-1 bottom-5 line-through text-slate-400">₹7,999</span>
+                    </div>
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/crausal3.jpeg" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10 text-red-600">₹4,199</span>
+                        <span class="absolute font-bold right-1 bottom-5 line-through text-slate-400">₹5,999</span>
+                    </div>
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/crausal4.avif" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10">₹14,999</span>
+                    </div>
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/crausal5.avif" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10">₹4,999</span>
+                    </div>
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/crausal6.avif" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10">₹7,999</span>
+                    </div>
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/craousal7.jpg" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10">₹6,999</span>
+                    </div>
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/crausal8.avif" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10">₹6,999</span>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="w-full my-8 relative">
+                <picture class="w-full">
+                    <source srcset="Images/Image8.jpg" media="(min-width:1024px)" class="w-full">
+                    <source srcset="Images/Image8(i).jpg" media="(min-width:540px)" class="w-full">
+                    <img src="Images/Image8(ii).jpg" alt="" class="w-full">
+                </picture>
+
+                <div class="w-[30vw] h-[20vw] flex flex-col justify-center items-center
+                absolute top-[23%] left-[35%] SmallScreenContent:hidden
+                ">
+                    <h1 class="text-[2.7vw] text-black font-bold">RARE FINDS</h1>
+                    <h2 class="text-[1.6vw] text-black">EXCLUSIVELY ON PUMA</h2>
+                    <h3 class="text-[1.6vw] text-black">Not available elsewhere online</h3>
+                    <div class="w-full mt-4 flex justify-center gap-8">
+                        <button class="w-[16vw] h-[3.5vw] text-[1.5vw] border-2 border-solid border-black text-black mt-[16px] font-bold buttonContent: ">SHOP NOW</button>
+                        <button class="w-[18vw] h-[3.5vw] text-[1.5vw] border-2 border-solid border-black text-black mt-[16px] font-bold buttonContent:">SHOP PALERMO</button>
+                    </div>
+                </div>
+
+                <div class="w-[310px] h-[170px] mx-auto flex flex-col justify-center items-center hidden
+                SmallScreenContent:flex">
+                    <h1 class="text-black font-bold text-[25px] ">RARE FINDS</h1>
+                    <h2 class="text-black text-[15px]">EXCLUSIVELY ON PUMA</h2>
+                    <h3 class="text-[15px] text-black">Not available elsewhere online</h3>
+                    <button class="w-[110px] h-[30px] text-[12px] bg-black text-white mt-[20px] font-bold">SHOP NOW</button>
+                </div>
+                
+            </div>
+
+            <div class="w-full my-8 relative">
+                <picture class="w-full">
+                    <source srcset="Images/Image7.jpg" media="(min-width:540px)" class="w-full">
+                    <img src="Images/Image7(ii).jpg" alt="" class="w-full">
+                </picture>
+
+                <div class="w-[30vw] h-[20vw] flex flex-col justify-center items-center
+                absolute top-[23%] left-0 SmallScreenContent:hidden
+                ">
+                    <h1 class="text-[3.1vw] text-white font-bold">TRAVEL IN STYLE</h1>
+                    <h2 class="text-[1.9vw] text-white self-start ml-8">GEAR UP FOR YOUR <br><span class=""> NEXT ADVENTURE</span></h2>
+                    <button class="w-[125px] h-[40px] text-[16px] bg-white text-black mt-[16px] ml-8 font-bold buttonContent:w-[110px] h-[25px] text-[12px] self-start">SHOP NOW</button>
+                </div>
+
+                <div class="w-[310px] h-[170px] mx-auto flex flex-col justify-center items-center hidden
+                SmallScreenContent:flex">
+                    <h1 class="text-black font-bold text-[22px] ">TRAVEL IN STYLE</h1>
+                    <h2 class="text-black text-[14px]">GEAR UP FOR YOUR <br><span class=""> NEXT ADVENTURE</span> </h2>
+                    <button class="w-[120px] h-[36px] text-[14px] bg-black text-white mt-[20px] font-bold">SHOP NOW</button>
+                </div>
+                
+            </div>
+
+            <div class="w-full">
+                <span class="text-black text-3xl font-semibold ml-10">RECOMMENDED FOR YOU</span>
+
+                <div class="w-[95%] h-[340px] mx-auto mt-4 whitespace-nowrap overflow-scroll scroller">
+
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/rcroausal1.avif" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10">₹6,999</span>
+                    </div>
+
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/rcrousal2.avif" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10 text-red-600">₹5,199</span>
+                        <span class="absolute font-bold right-1 bottom-5 line-through text-slate-400">₹7,999</span>
+                    </div>
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/rcrousal3.avif" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10 text-red-600">₹4,199</span>
+                        <span class="absolute font-bold right-1 bottom-5 line-through text-slate-400">₹5,999</span>
+                    </div>
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/rcrousal4.avif" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10">₹14,999</span>
+                    </div>
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/rcrousal5.avif" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10">₹4,999</span>
+                    </div>
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/rcrousal6.avif" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10">₹7,999</span>
+                    </div>
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/rcrousal4.avif" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10">₹6,999</span>
+                    </div>
+                    <div class="w-[270px] h-full inline-block relative bottom-10">
+                        <img src="Images/rcrousal8.avif" class="w-full h-[250px] object-cover object-center">
+                        <h3 class="font-bold mt-4">BMW M Motorsport Caven <br> 2.0 Unisex Sneakers</h3>
+                        <span class="absolute font-bold right-1 bottom-10">₹6,999</span>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    
+    <footer>
+        <div class="w-screen p-[50px] bg-black border-2 border-solid border-black">
+
+            <div class="w-full h-[270px] flex nav2-2:hidden">
+                <div class="w-[25%] h-full">
+                    <h1 class="text-white text-[24px] ml-4">SUPPORT</h1>
+                    <ul class="list-none leading-7 ml-4">
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Contact us</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Promotions & Sale</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Track Order</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Privacy Policy</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Terms & Conditions</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Cookies Settings</li>
+                    </ul>
+                </div>
+                <div class="w-[25%] h-full">
+                    <ul class="list-none leading-7 ml-4 mt-8">
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">FAQ</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">My Account</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Return Policy</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Tech Glossary</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Initiate Return</li>
+                    </ul>
+                </div>
+                <div class="w-[20%] h-full">
+                    <h1 class="text-white text-[24px] ml-4">ABOUT</h1>
+                    <ul class="list-none leading-7 ml-4">
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Company</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Corporate News</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Press Center</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Investers</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Sustainability</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Carriers</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">Store Finder</li>
+                        <li class="text-[#dfe0e1] text-[16px] hover:text-white">PUMA DNA</li>
+                    </ul>
+                </div>
+                <div class="w-[30%] h-full flex flex-col">
+                    <div class="w-full h-1/2">
+                        <h1 class="text-white text-xl font-semibold ml-12">STAY UP TO DATE</h1>
+                        <div class="w-full h-[65%] mt-4 flex justify-evenly items-center">
+                            <i class="fa-brands fa-youtube " style="color: #ffffff; font-size: 30px;"></i>
+                            <i class="fa-brands fa-twitter " style="color: #ffffff; font-size: 30px;"></i>
+                            <i class="fa-brands fa-pinterest " style="color: #ffffff; font-size: 30px;"></i>
+                            <i class="fa-brands fa-instagram " style="color: #ffffff; font-size: 30px;"></i>
+                            <i class="fa-brands fa-facebook " style="color: #ffffff; font-size: 30px;"></i>
+                        </div>
+                    </div>
+                    <div class="w-full h-1/2">
+                        <h1 class="text-white text-xl font-semibold ml-12">EXPLORE</h1>
+                        <div class="w-full h-[65%] mt-4 flex justify-start items-center">
+                            <div class="size-[60px] rounded-[10px] ml-12 border-2 border-solid border-[#676D75] hover:border-white">
+                                <img src="Images/pumalogo2.png" class="size-[40px] object-cover object-center m-2">
+                            </div>
+                            <div class="size-[60px] rounded-[10px] ml-4 border-2 border-solid border-[#676D75] hover:border-white">
+                                <img src="Images/pumalogo2.png" class="size-[40px] object-cover object-center m-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full mb-12 hidden nav2-2:inline-block">
+
+                <div class="w-full footerContainer">
+
+                    <div class="w-full h-[40px] flex justify-between">
+                        <span class="text-white ml-4 text-xl font-semibold">SUPPORT</span>
+                        <div class="flex justify-center items-center mr-4 dropDownBtns">
+                            <i class="fa-solid fa-chevron-up" id="firstFooterContent" style="color: #ffffff; font-size: 20px;"></i>
+                            <i class="fa-solid fa-chevron-down invisible" id="firstFooterContent" style="color: #ffffff; font-size: 20px; position: relative; right:19px;"></i>
+                        </div>
+                    </div>
+
+                    <div class="w-full h-[164px] grid grid-cols-2 SmallScreenContent:h-[200px] hidden firstFooterContent">
+                        <ul class="list-none pl-4 pt-4">
+                            <li class="text-white text-[16px] font-semibold text-slate-300 hover:text-white">Contact Us</li>
+                            <li class="text-white text-[16px] font-semibold text-slate-300 hover:text-white">Promotions & Sale</li>
+                            <li class="text-white text-[16px] font-semibold text-slate-300 hover:text-white">Track Order</li>
+                            <li class="text-white text-[16px] font-semibold text-slate-300 hover:text-white">Privacy Policy</li>
+                            <li class="text-white text-[16px] font-semibold text-slate-300 hover:text-white">Terms & Conditions</li>
+                        </ul>
+                        <ul class="list-none pl-4 pt-4">
+                            <li class="text-white text-[16px] text-slate-300 hover:text-white">FAQs</li>
+                            <li class="text-white text-[16px] text-slate-300 hover:text-white">My Accounts</li>
+                            <li class="text-white text-[16px] text-slate-300 hover:text-white">Return Policy</li>
+                            <li class="text-white text-[16px] text-slate-300 hover:text-white">Tech Glossary</li>
+                            <li class="text-white text-[16px] text-slate-300 hover:text-white">Initiate Return</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="w-full footerContainer">
+
+                    <div class="w-full h-[40px] flex justify-between">
+                        <span class="text-white ml-4 text-xl font-semibold">ABOUT</span>
+                        <div class="flex justify-center items-center mr-4 dropDownBtns">
+                            <i class="fa-solid fa-chevron-up" id="secondFooterContent" style="color: #ffffff; font-size:20px"></i>
+                            <i class="fa-solid fa-chevron-down invisible" id="secondFooterContent" style="color: #ffffff;
+                            color: #ffffff; font-size: 20px; position: relative; right:19px;"></i>
+                        </div>
+                    </div>
+
+                    <div class="w-full h-[236px] hidden secondFooterContent">
+                        <ul class="w-full h-full list-none pl-4 pt-4">
+                            <li class="text-white text-[16px] font-semibold text-slate-300 hover:text-white">Comapny</li>
+                            <li class="text-white text-[16px] font-semibold text-slate-300 hover:text-white">Corporate News</li>
+                            <li class="text-white text-[16px] font-semibold text-slate-300 hover:text-white">Press Center</li>
+                            <li class="text-white text-[16px] font-semibold text-slate-300 hover:text-white">Investors</li>
+                            <li class="text-white text-[16px] font-semibold text-slate-300 hover:text-white">Sustainability</li>
+                            <li class="text-white text-[16px] font-semibold text-slate-300 hover:text-white">Carriers</li>
+                            <li class="text-white text-[16px] font-semibold text-slate-300 hover:text-white">Store Finder</li>
+                            <li class="text-white text-[16px] font-semibold text-slate-300 hover:text-white">PUMA DNA</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-full footerContainer">
+
+                    <div class="w-full h-[40px] flex justify-between">
+                        <span class="text-white ml-4 text-xl font-semibold">STAY UP TO DATE</span>
+                        <div class="flex justify-center items-center mr-4 dropDownBtns">
+                            <i class="fa-solid fa-chevron-up" id="thirdFooterContent" style="color: #ffffff; font-size:20px"></i>
+                            <i class="fa-solid fa-chevron-down invisible" id="thirdFooterContent" style="color: #ffffff;
+                            color: #ffffff; font-size: 20px; position: relative; right:19px;"></i>
+                        </div>
+                    </div>
+
+                    <div class="w-full h-[80px] hidden thirdFooterContent">
+                        <div class="w-full h-full mt-4 flex justify-start">
+                            <i class="fa-brands fa-youtube ml-8" style="color: #ffffff; font-size: 30px;"></i>
+                            <i class="fa-brands fa-twitter ml-8" style="color: #ffffff; font-size: 30px;"></i>
+                            <i class="fa-brands fa-pinterest ml-8" style="color: #ffffff; font-size: 30px;"></i>
+                            <i class="fa-brands fa-instagram ml-8" style="color: #ffffff; font-size: 30px;"></i>
+                            <i class="fa-brands fa-facebook ml-8" style="color: #ffffff; font-size: 30px;"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full footerContainer">
+
+                    <div class="w-full h-[40px] flex justify-between">
+                        <span class="text-white ml-4 text-xl font-semibold">EXPLORE</span>
+                        <div class="flex justify-center items-center mr-4 dropDownBtns">
+                            <i class="fa-solid fa-chevron-up" id="fourthFooterContent" style="color: #ffffff; font-size:20px"></i>
+                            <i class="fa-solid fa-chevron-down invisible" id="fourthFooterContent" style="color: #ffffff;
+                            color: #ffffff; font-size: 20px; position: relative; right:19px;"></i>
+                        </div>
+                    </div>
+
+                    <div class="w-full h-[92px] hidden fourthFooterContent">
+                        <div class="w-full h-full mt-4 flex justify-start">
+                            <div class="size-[60px] rounded-[10px] ml-12 border-2 border-solid border-[#676D75] hover:border-white">
+                                <img src="Images/pumalogo2.png" class="size-[40px] object-cover object-center m-2">
+                            </div>
+                            <div class="size-[60px] rounded-[10px] ml-4 border-2 border-solid border-[#676D75] hover:border-white">
+                                <img src="Images/pumalogo2.png" class="size-[40px] object-cover object-center m-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="w-full h-[55px] border-2 border-solid border-[#676D75] text-white text-xl font-bold mx-auto hover:border-white hidden nav2-2:inline-block">INDIA</button>
+            <br><br>
+            <hr class="text-white">
+            <br>
+
+            <div class="w-full h-[100px] grid grid-cols-3 nav2-2:grid-cols-2 SmallScreenContent:grid-cols-1">
+                <div class="flex justify-evenly items-center">
+                    <i class="fa-brands fa-cc-visa" style="color: #ffffff; font-size: 30px;"></i>
+                    <i class="fa-brands fa-cc-mastercard" style="color: #ffffff; font-size: 30px;"></i>
+                    <i class="fa-brands fa-google-pay" style="color: #ffffff; font-size: 30px;"></i>
+                    <i class="fa-brands fa-paypal" style="color: #ffffff; font-size: 30px;"></i>
+                    <i class="fa-regular fa-credit-card" style="color: #ffffff; font-size: 30px;"></i>
+                </div>
+                <div class="flex items-center nav2-2:hidden">
+                    <button class="w-[120px] h-[55px] border-2 border-solid border-[#676D75] text-white text-xl font-bold mx-auto hover:border-white">INDIA</button>
+                </div>
+                <div class="text-right pt-4 SmallScreenContent:text-center">
+                    <span class="text-white">© PUMA India Ltd, 2024. All Rights Reserved.</span>
+                    <br>
+                    <span class="text-white">Imprint and Legal Data</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>   
+
+    <script src="https://kit.fontawesome.com/1027423bb8.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
